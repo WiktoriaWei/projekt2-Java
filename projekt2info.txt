@@ -1,0 +1,6 @@
+Na początku deklaruję klasę Daneproduktu, która zawiera cechy wspólne dla wszystkich produktów i podstawowe metody.
+Następnie deklaruje klasy kolejno książki, filmy, płyty, audiobooki i ebooki, w których dziedziczę konstruktorami cechy z Daneproduktu oraz tworzę cechy indywidealne.
+Następnie tworzę klasę Wypożyczenie, która przechowuje podstawowe dane do wypożycznia.
+Następnie tworzę klasę klient, w której deklaruję prywatne cechy klienta, dziedzicze je.
+Następnie kolejno tworzę klasy Wypożyczalnia, Start. 
+Wszystkie funkcje są opisane dokładniej w pgrogramie.
