@@ -27,7 +27,7 @@ public class start {
         wei.addUzytkownik(W);
         Klient J = new Klient("Jan", "Kowalski", "Warszawa", 34);
         wei.addUzytkownik(J); //deklaruje i dodaje dane klientow
-        long dw= wei.wyp(W.getID(), mf.getID()); //nadaje date wypozyczeniu
+        long dw= wei.wyp(W.getID(), prog.getID()); //nadaje date wypozyczeniu
         wei.wyp(W.getID(), prog.getID());//na przykladzie ebooka
         Thread.sleep(1000);
         long dz= wei.zwrot(W.getID(), prog.getID()); //nadaje date zwrotu
