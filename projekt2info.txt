@@ -1,6 +1,8 @@
-Na początku deklaruję klasę Daneproduktu, która zawiera cechy wspólne dla wszystkich produktów i podstawowe metody.
-Następnie deklaruje klasy kolejno książki, filmy, płyty, audiobooki i ebooki, w których dziedziczę konstruktorami cechy z Daneproduktu oraz tworzę cechy indywidealne.
-Następnie tworzę klasę Wypożyczenie, która przechowuje podstawowe dane do wypożycznia.
-Następnie tworzę klasę klient, w której deklaruję prywatne cechy klienta, dziedzicze je.
-Następnie kolejno tworzę klasy Wypożyczalnia, Start. 
+Na początku deklaruję klasę Daneproduktu, która zawiera cechy wspólne dla wszystkich produktów.
+Następnie deklaruje klasy kolejno książki, filmy, płyty, audiobooki i ebooki, w których dziedziczę konstruktorem (używam super) cechy z Daneproduktu oraz tworzę cechy indywidealne.
+Następnie tworzę klasę Wypożyczenie, któradeklaruje podstawowe dane do wypożycznia (jako prywatne), następnie dziedziczę je w konstruktorze (użwam this), aby móc użyć tych zmiennych w reszcie kodu.
+Następnie tworzę klasę klient, w której deklaruję prywatne cechy klienta, dziedzicze je w klasie Wypożyczenie, aby móc ich użyć w zadeklarowanych tam metodach oraz reszcie kodu.
+Następnie kolejno tworzę klasy Wypożyczalnia, Start.
+Program może wydawać się chaotyczny, ponieważ w trakcie pisania udoskonalałam go o nowe możliwości,przez co najpierw spełniał podstawowe funkcje czyli wypożycznie, zwrot i zapłata(za nieterminowe oddanie),posiadał listy kolejno produktów, klientów oraz wypożyczeń, później zostało to udoskonalone, oraz dodałam możliwości posiadania długu, zablokowania wypożyczenia dla osób z długiem lub gdy produkt ma status wypożyczenia, nadanie statusu do zwrotu ksiazce wypożyczonej. Są też stworzone przykłady produktów czy klientów.
+Program mógłby być bardziej rozwinięty np. o kategorie książek, płyt itd, mógłby liczyć częstotliwość wypożyczeń danych produktów, ilośc wypożyczeń danego klienta czy posiadać system rezerwacji produktów gdy nie są one dostępne.
 Wszystkie funkcje są opisane dokładniej w pgrogramie.
