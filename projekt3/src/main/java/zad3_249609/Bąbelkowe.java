@@ -3,10 +3,10 @@ package zad3_249609;
 public class Bąbelkowe implements Sortable {
     int step = 0;
     public int[] sort(int[] tab) {
-        for(int i = 0; i < tab.length-1; i++)
+        for(int i=0; i<tab.length-1; i++)
         {
             step++; //w sortowaniu babęlkowym liczba porównań jest o 1 mniejsza od wielkości tablicy(ilości elementów)
-            for(int j = 0; j < tab.length-i-1; j++) //porównuje ze sobą kolejne elementy tablicy i je zamienia
+            for(int j=0; j<tab.length-i-1; j++) //porównuje ze sobą kolejne elementy tablicy i je zamienia
             {
                 if(tab[j] > tab[j+1])
                 {
