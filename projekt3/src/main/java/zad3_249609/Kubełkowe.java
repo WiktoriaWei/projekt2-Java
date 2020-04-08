@@ -7,10 +7,10 @@ public class Kubełkowe implements Sortable {
     int step = 0;
     private void sortBucket(List<Integer> kubełek) //sortuje elementy w kubełku sortowaniem bąbelkowym
     {
-        for(int i = 0; i < kubełek.size()-1; i++)
+        for(int i=0; i<kubełek.size()-1; i++)
         {
             step++; // liczba porównań zależy od ilości kubełków oraz sposobu sortowania użytego do posortowania elementów w kubełku
-            for(int j = 0; j < kubełek.size()-i-1; j++) //w tym przypadku liczba porównań będzie równa sumie porównań z każdego kubełka
+            for(int j=0; j<kubełek.size()-i-1; j++) //w tym przypadku liczba porównań będzie równa sumie porównań z każdego kubełka
             {//która przypadku sortowania bąbelkowego tu wykorzystanego jest równa liczbie elementów kubełka minus 1
                 if(kubełek.get(j) > kubełek.get(j+1))
                 {
@@ -27,7 +27,7 @@ public class Kubełkowe implements Sortable {
     {
         int liczbakubełków = 100; //im więcej kubełków tym mniejsza liczba porównań
         int max = tab[0];
-        for(int i = 0; i < tab.length; i++) //szukam maksymalnej wartości z tablicy
+        for(int i=0; i tab.length; i++) //szukam maksymalnej wartości z tablicy
         {
             if(max < tab[i])
             {
@@ -37,7 +37,7 @@ public class Kubełkowe implements Sortable {
 
         List<Integer>[] kubełki = new List[liczbakubełków]; //tworze liste przechowującą kubełki
 
-        for(int i = 0; i < liczbakubełków; i++)
+        for(int i=0; i<liczbakubełków; i++)
         {
             kubełki[i] = new LinkedList<>(); //tworzę listę dla kązdego kubełka
         }
@@ -57,7 +57,7 @@ public class Kubełkowe implements Sortable {
             }
         }
 
-        for (int i = 0; i < tab.length; i++)
+        for (int i=0; i<tab.length; i++)
         {
             System.out.print(tab[i] + " ");
         }
