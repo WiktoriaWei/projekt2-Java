@@ -27,7 +27,7 @@ public class Kubełkowe implements Sortable {
     {
         int liczbakubełków = 100; //im więcej kubełków tym mniejsza liczba porównań
         int max = tab[0];
-        for(int i=0; i tab.length; i++) //szukam maksymalnej wartości z tablicy
+        for(int i=0; i < tab.length; i++) //szukam maksymalnej wartości z tablicy
         {
             if(max < tab[i])
             {
